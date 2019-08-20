@@ -1,4 +1,8 @@
 // Instagram auto post
+//
+//License: GNU General Public License v2 or later
+//
+//License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 CHROME = EXEC("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
 
@@ -7,9 +11,6 @@ SLEEP(5)
 KBD(VK_ALT,DOWN,1469)
 KBD(VK_D,CLICK,0)
 KBD(VK_ALT,UP,141)
-
-//URL="https://instagram.com/"
-//SENDSTR(CHROME, URL)
 
 KBD(VK_I,CLICK,0)
 KBD(VK_N,CLICK,0)
@@ -37,5 +38,26 @@ KBD(VK_CTRL,UP,62)
 
 SLEEP(12)
 
+KBD(VK_F5,CLICK,0)
+
+SLEEP(5)
+
 INSTAID = GETID("Instagram - Google Chrome","Chrome_WidgetWin_1")
 CLKITEM(INSTAID, "New Post")
+
+SLEEP(5)
+
+FILENAME="japonesclasse2"
+SENDSTR(INSTAID, FILENAME)
+
+SLEEP(5)
+
+//CLKITEM(INSTAID, "Abrir")
+KBD(VK_TAB,CLICK,0)
+KBD(VK_TAB,CLICK,0)
+KBD(VK_RETURN,CLICK,0)
+
+SLEEP(5)
+
+CLKITEM(INSTAID, "Next")
+
