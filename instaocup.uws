@@ -47,7 +47,7 @@ CLKITEM(INSTAID, "New Post")
 
 SLEEP(2)
 
-FILENAME="japonesclasse2"
+FILENAME="fine_name_to_upload.jpg"
 SENDSTR(INSTAID, FILENAME)
 
 SLEEP(2)
@@ -63,7 +63,10 @@ CLKITEM(INSTAID, "Next")
 
 SLEEP(2)
 
-MESSAGESTR = "#japonesclasse"
+MESSAGESTR = "message to post"
 SENDSTR(INSTAID, MESSAGESTR)
 
 CLKITEM(INSTAID, "Share")
+
+
+//end
