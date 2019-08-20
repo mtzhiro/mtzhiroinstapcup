@@ -6,6 +6,8 @@
 
 - UWSC
 
+please be careful initial Chrome window size, IME Input statues, etc.
+
 ## license
 
 License: GNU General Public License v2 or later
